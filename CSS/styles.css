@@ -25,6 +25,7 @@
   width: 500px;
   cursor: pointer;
   position: relative;
+  transition: all .5s linear;
 }
 .navbar ul li{
   font-size: 25px;
@@ -36,11 +37,15 @@
   padding-right: 50px;
   margin: 0px 20px;
   position: relative;
+  transition: all .5s linear;
 }
 .navbar ul li a{
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+.navbar ul li a:hover{
+  color: #2EA0F3;
 }
 .navbar ul li::after{
   content: '';
@@ -66,7 +71,7 @@
 }
 .content h1{
   font-size: 110px;
-  margin-top: 80px;
+  margin-top: 3.5%;
 }
 .content p{
   font-size: 40px;
@@ -104,4 +109,12 @@ button:hover span{
 }
 button:hover {
   border: none;
+}
+@viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
 }
