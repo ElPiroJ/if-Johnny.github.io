@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.banner{
+  width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),
+  url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 5px 20px 1px;
+}
+.navbar{
+  width: 100%;
+  height: 8vh;
+  padding-top: .5%;
+  justify-content: space-between;
+  text-align: center;
+  background-color:#003A69;
+  box-shadow: 0px 5px 20px 1px;
+}
+.navbar ul li{
+  font-size: 2vw;
+  list-style: none;
+  display: inline-block;
+  font-family: sans-serif;
+
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 20px;
+  transition: 1s;
+}
+.navbar ul li a:hover{
+  color: #2EA0F3;
+  transition: .5s
+}
+.content {
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
+.content h1 {
+  text-align: center;
+  font-size: 6vw;
+  font-family: sans-serif;
+  color: white;
+}
+.content p {
+  text-align: center;
+  font-size: 3vw;
+  font-family: sans-serif;
+  color: white;
+}
+.button {
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+button {
+  width: 16%;
+  height: 7vh;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #2EA0F3;
+  font-weight: bold;
+  font-size: 2vw;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0 #2EA0F3;
+  transition: ease-out 1s;
+}
+button:hover {
+  border: none;
+  box-shadow: inset 100vh 0 0 0 #2EA0F3;
+  cursor: pointer;
+}
+.about {
+  font-family: sans-serif;
+}
+.foto {
+  border-radius: 25px;
+}
