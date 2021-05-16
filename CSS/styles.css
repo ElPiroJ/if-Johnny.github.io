@@ -1,120 +1,89 @@
 *{
-  margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  margin: 0;
 }
 .banner{
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0,0.75),rgba(0, 0, 0,0.75)),
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),
   url(../images/background.png);
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 5px 20px 1px;
 }
 .navbar{
   width: 100%;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  align-items: center;
+  height: 8vh;
+  padding-top: .5%;
   justify-content: space-between;
-}
-.logo{
-  left: -80px;
-  top: -50px;
-  width: 500px;
-  cursor: pointer;
-  position: relative;
-  transition: all .5s linear;
+  text-align: center;
+  background-color:#003A69;
+  box-shadow: 0px 5px 20px 1px;
 }
 .navbar ul li{
-  font-size: 25px;
-  font-family: sans-serif;
-  top: -45px;
-  right: 45px;
+  font-size: 2vw;
   list-style: none;
   display: inline-block;
-  padding-right: 50px;
-  margin: 0px 20px;
-  position: relative;
-  transition: all .5s linear;
+  font-family: sans-serif;
+
 }
 .navbar ul li a{
   text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
+  color: white;
+  display: block;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 20px;
+  transition: 1s;
 }
 .navbar ul li a:hover{
   color: #2EA0F3;
+  transition: .5s
 }
-.navbar ul li::after{
-  content: '';
-  height: 2px;
-  width: 0;
-  background: #2EA0F3;
+.content {
+  align-items: center;
   position: absolute;
-  left: -20px;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after{
   width: 100%;
-
+  top: 20%;
 }
-.content{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.content h1 {
   text-align: center;
-  color: #fff;
+  font-size: 6vw;
+  font-family: sans-serif;
+  color: white;
 }
-.content h1{
-  font-size: 110px;
-  margin-top: 3.5%;
-}
-.content p{
-  font-size: 40px;
-  margin: 20px auto;
-  font-weight: 100;
-  line-height: 40px;
-}
-button{
-  width: 200px;
-  padding: 15px 0;
+.content p {
   text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
+  font-size: 3vw;
+  font-family: sans-serif;
+  color: white;
+}
+.button {
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+button {
+  width: 16%;
+  height: 7vh;
+  color: white;
+  border-radius: 10px;
   border: 2px solid #2EA0F3;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-span{
-  background: #2EA0F3;
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position:absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
-button:hover span{
-  width: 100%;
+  font-weight: bold;
+  font-size: 2vw;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0 #2EA0F3;
+  transition: ease-out 1s;
 }
 button:hover {
   border: none;
+  box-shadow: inset 100vh 0 0 0 #2EA0F3;
+  cursor: pointer;
 }
-@viewport{
-  width: extend-to-zoom;
-  zoom: 1.0;
+.about {
+  font-family: sans-serif;
 }
-@-ms-viewport{
-  width: extend-to-zoom;
-  zoom: 1.0;
+.foto {
+  border-radius: 25px;
 }
